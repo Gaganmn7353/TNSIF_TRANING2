@@ -1,20 +1,20 @@
 package org.tnsif.acc.c2tc.methodoverriding;
 
-class PaymentMethod
+class PaymentMethod1
 {
 	void makePayment()
 	{
 		System.out.println("Processing payment");
 	}
 }
-class CreditCard extends PaymentMethod
+class CreditCard extends PaymentMethod1
 {
 	void swipeCard()
 	{
 		System.out.println("Swiping credit card");
 	}
 }
-class Paypal extends PaymentMethod
+class Paypal extends PaymentMethod1
 {
 	void loginToPaypal()
 	{
@@ -24,7 +24,7 @@ class Paypal extends PaymentMethod
 public class InstanceOfDemo2 {
 
 	public static void main(String[] args) {
-		PaymentMethod payment=new PaymentMethod();
+		PaymentMethod1 payment=new PaymentMethod1();
 		
 		
 		payment=new Paypal();
