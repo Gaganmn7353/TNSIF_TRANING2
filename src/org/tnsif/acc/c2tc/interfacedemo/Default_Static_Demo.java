@@ -33,7 +33,6 @@ class Car implements Vehicle {
         System.out.println("Car " + model + " stopping");
     }
 
-    // Overriding default method
     @Override
     public void repair() {
         System.out.println("Car " + model + " repair service is available");
